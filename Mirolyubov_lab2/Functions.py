@@ -1,4 +1,5 @@
 from CONST import *
+from nltk.util import ngrams
 import copy
 
 
@@ -37,7 +38,7 @@ def get_num_sent(text: str) -> int:
 
 def get_num_non_declarative_sent(text: str) -> int:
     res = 0
-    if get_default_check():
+    if get_default_check(text):
         iterator = 0
         while iterator < len(text):
             if text[iterator] == "!" or text[iterator] == "?":
@@ -51,7 +52,7 @@ def get_num_non_declarative_sent(text: str) -> int:
 
 
 def get_average_sent_len(text: str) -> float:
-    if get_default_check():
+    if get_default_check(text):
         txt = copy.copy(text)
 
         for i in PUNCT_FOR_WORDS.keys():
@@ -65,7 +66,7 @@ def get_average_sent_len(text: str) -> float:
 
 
 def get_average_len_word(text: str) -> float:
-    if get_default_check():
+    if get_default_check(text):
         length = 0
         txt = copy.copy(text)
         lst = txt.split()
@@ -83,6 +84,33 @@ def get_average_len_word(text: str) -> float:
     else:
         return 0
 
+
+def top_n_grams(k: int, n: int, text: str) -> list:
+    if get_default_check(text):
+        res = []
+        txt = copy.copy(text)
+        lst = txt.split()
+
+        for i in PUNCT_FOR_WORDS.keys():
+            txt = txt.replace(i, " ")
+
+        txt = txt.split()
+        n_grams = ngrams(txt, n)
+
+        lst = [" ".join(grams) for grams in n_grams]
+        lst = sorted(lst, key=lst.count, reverse=True)
+
+        i = 0
+        while i < len(lst):
+            res.append(lst[i])
+            i += lst.count(lst[i])
+            k -= 1
+            if k == 0:
+                break
+
+        return res
+    else:
+        return [0]
 
 
 
