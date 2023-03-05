@@ -113,4 +113,9 @@ def top_n_grams(k: int, n: int, text: str) -> list:
         return [0]
 
 
-
+def menu():
+    print("1. The number of sentences in the text")
+    print("2. The number of non-declarative sentences in the text")
+    print("3. Average length of the sentences")
+    print("4. Average length of the words")
+    print("5. Top K-repeated N-grams in the text")
