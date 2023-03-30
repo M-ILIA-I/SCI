@@ -29,8 +29,8 @@ if __name__ == "__main__":
             print(f"Average length of the sentences: {get_average_sent_len(text)}")
         case '4':
             print(f"Average length of the words: {get_average_len_word(text)}")
-        case '5':
-            print(f"Top K-repeated N-grams in the text: {top_n_grams(K, N, text)}")
+        #case '5':
+            #print(f"Top K-repeated N-grams in the text: {top_n_grams(K, N, text)}")
         case _:
             print("This operation is not supported")
 

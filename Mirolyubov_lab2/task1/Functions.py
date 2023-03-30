@@ -1,5 +1,5 @@
 from CONST import *
-from nltk.util import ngrams
+#from nltk.util import ngrams
 import copy
 
 
@@ -59,7 +59,13 @@ def get_average_sent_len(text: str) -> float:
             txt = txt.replace(i, " ")
 
         txt = txt.split()
-        return len(txt)/get_num_sent(text)
+        digit_counter = 0
+
+        for i in txt:
+            if i.isdigit():
+                digit_counter += 1
+
+        return (len(txt)-digit_counter)/get_num_sent(text)
 
     else:
         return 0
@@ -69,17 +75,20 @@ def get_average_len_word(text: str) -> float:
     if get_default_check(text):
         length = 0
         txt = copy.copy(text)
-        lst = txt.split()
 
         for i in PUNCT_FOR_WORDS.keys():
             txt = txt.replace(i, " ")
 
         txt = txt.split()
+        digit_counter = 0
 
         for i in txt:
-            length += len(i)
+            if not i.isdigit():
+                length += len(i)
+            else:
+                digit_counter += 1
 
-        return length/len(txt)
+        return length/(len(txt) - digit_counter)
 
     else:
         return 0
