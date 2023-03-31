@@ -12,11 +12,13 @@ class Container:
         self.storage = set(storage)
 
     def add(self, key: str):
+        self.storage = set(self.storage)
         buffer = key.split(" ")
         if buffer:
             self.storage.update(buffer)
 
     def remove(self, element):
+        self.storage = set(self.storage)
         self.storage.discard(element)
 
     def find(self, element):
@@ -53,3 +55,5 @@ class Container:
             self.storage = set()
         else:
             self.storage = db[username]
+
+
