@@ -11,5 +11,6 @@ def menu():
     print("Enter 5 if you want to save you container")
     print("Enter 6 if you want load the data")
     print("Enter 7 if you want switch user")
-    print("Enter 8 if you want stop the program")
+    print("Enter 8 if you want to grep")
+    print("Enter 9 if you want stop the program")
 

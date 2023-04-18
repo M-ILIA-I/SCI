@@ -25,7 +25,11 @@ if __name__ == "__main__":
 
     while Run:
         menu()
-        a = int(input())
+        a = input()
+        if a.isdigit():
+            a = int(a)
+        else:
+            a = 9
         match a:
             case 1:
                 print("Enter information that you want to add: ", end="")
@@ -54,7 +58,14 @@ if __name__ == "__main__":
                 print("Enter username: ", end="")
                 general_storage.switch(input(), db)
             case 8:
+                general_storage.grep(input())
+            case 9:
+                print("Enter 1 if you want save data: ", end="")
+                if input() == '1':
+                    general_storage.save(db)
                 break
+            case _:
+                print("This command doesn't exist(((")
 
     print("Program end")
 

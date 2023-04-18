@@ -1,5 +1,5 @@
 import json
-
+import re
 from User import User
 
 
@@ -13,7 +13,7 @@ class Container:
 
     def add(self, key: str):
         self.storage = set(self.storage)
-        buffer = key.split(" ")
+        buffer = key.split(",")
         if buffer:
             self.storage.update(buffer)
 
@@ -32,8 +32,16 @@ class Container:
             print(i, end=" ")
         print()
 
-    def grep(self):
-        pass
+    def grep(self, regex: str) -> None:
+        count = 0
+        for item in self.storage:
+            if (res := re.match(regex, item)):
+                print(f"Matching pattern {item}")
+                count += 1
+            if not count:
+                print("There are no items, matching by this regular expression")
+            else:
+                print(f"Found {count} matches")
 
     def save(self, db: dict):
         db[self.user.username] = self.storage

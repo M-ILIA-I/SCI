@@ -1,6 +1,8 @@
-from CONST import *
+# from CONST import *
 #from nltk.util import ngrams
 import copy
+
+from task1.CONST import PUNCT_MARKS, ABBR_WORD, PUNCT_FOR_WORDS
 
 
 def get_default_check(text: str) -> bool:
@@ -58,7 +60,9 @@ def get_average_sent_len(text: str) -> float:
         for i in PUNCT_FOR_WORDS.keys():
             txt = txt.replace(i, " ")
 
+
         txt = txt.split()
+        print(txt)
         digit_counter = 0
 
         for i in txt:
@@ -66,7 +70,6 @@ def get_average_sent_len(text: str) -> float:
                 digit_counter += 1
 
         return (len(txt)-digit_counter)/get_num_sent(text)
-
     else:
         return 0
 
@@ -95,31 +98,22 @@ def get_average_len_word(text: str) -> float:
 
 
 def top_n_grams(k: int, n: int, text: str) -> list:
-    if get_default_check(text):
-        res = []
-        txt = copy.copy(text)
-        lst = txt.split()
+    txt = copy.copy(text)
+    for i in PUNCT_FOR_WORDS:
+        txt = txt.replace(i, "")
+    txt = txt.replace(" ", '')
+    txt = txt.lower()
+    txt = list(txt)
+    final_ngrams = {}
+    for i in range(len(txt)-n+1):
+        ngram = "".join(txt[i:i + n])
+        if ngram in final_ngrams:
+            final_ngrams[ngram] += 1
+        else:
+            final_ngrams[ngram] = 0
 
-        for i in PUNCT_FOR_WORDS.keys():
-            txt = txt.replace(i, " ")
-
-        txt = txt.split()
-        n_grams = ngrams(txt, n)
-
-        lst = [" ".join(grams) for grams in n_grams]
-        lst = sorted(lst, key=lst.count, reverse=True)
-
-        i = 0
-        while i < len(lst):
-            res.append(lst[i])
-            i += lst.count(lst[i])
-            k -= 1
-            if k == 0:
-                break
-
-        return res
-    else:
-        return [0]
+    lst = sorted(final_ngrams, key=final_ngrams.get, reverse=True)
+    return lst[0:k]
 
 
 def menu():
