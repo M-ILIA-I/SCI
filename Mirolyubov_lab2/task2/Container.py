@@ -35,13 +35,13 @@ class Container:
     def grep(self, regex: str) -> None:
         count = 0
         for item in self.storage:
-            if (res := re.match(regex, item)):
+            if res := re.match(regex, item):
                 print(f"Matching pattern {item}")
                 count += 1
-            if not count:
-                print("There are no items, matching by this regular expression")
-            else:
-                print(f"Found {count} matches")
+        if not count:
+            print("There are no items, matching by this regular expression")
+        else:
+            print(f"Found {count} matches")
 
     def save(self, db: dict):
         db[self.user.username] = self.storage

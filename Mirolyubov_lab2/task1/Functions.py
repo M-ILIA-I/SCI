@@ -1,7 +1,5 @@
-# from CONST import *
-#from nltk.util import ngrams
 import copy
-
+import re
 from task1.CONST import PUNCT_MARKS, ABBR_WORD, PUNCT_FOR_WORDS
 
 
@@ -25,15 +23,21 @@ def get_num_abbr(text: str) -> int:
 
 def get_num_sent(text: str) -> int:
     res = 0
+    txt = copy.copy(text)
+    txt = txt.lower()
     if get_default_check(text):
         iterator = 0
-        while iterator < len(text):
-            if text[iterator] in PUNCT_MARKS:
-                while iterator != len(text) - 1 and text[iterator + 1] in PUNCT_MARKS:
+        num_abbr = get_num_abbr(text)
+        for i in ABBR_WORD:
+            txt = re.sub(i, "", txt)
+
+        while iterator < len(txt):
+            if txt[iterator] in PUNCT_MARKS:
+                while iterator != len(txt) - 1 and txt[iterator + 1] in PUNCT_MARKS:
                     iterator += 1
                 res += 1
             iterator += 1
-        return res - get_num_abbr(text.lower())
+        return res
     else:
         return res
 
