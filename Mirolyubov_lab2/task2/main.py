@@ -1,12 +1,12 @@
 import json
 from Container import Container
 from User import User
-from Functions import *
-from CONSTANTS import *
+from Functions import menu, full_list
+from CONSTANTS import FILE_PATH
 
 if __name__ == "__main__":
     db = {}
-    general_storage = Container("user", set())
+    general_storage = Container("user", [])
 
     with open("db.json", "r") as f:
         f.seek(0, 2)
@@ -18,7 +18,7 @@ if __name__ == "__main__":
     username = input()
 
     if username not in db.keys():
-        db[username] = set()
+        db[username] = []
     general_storage = Container(username, db[username])
 
     Run = True
@@ -57,6 +57,11 @@ if __name__ == "__main__":
                 full_list(db)
                 print("Enter username: ", end="")
                 general_storage.switch(input(), db)
+                print("Press 1 if you want load data: ", end="")
+                if input() == '1':
+                    full_list(db)
+                    print("\n Enter username: ", end="")
+                    general_storage.load(FILE_PATH, input())
             case 8:
                 general_storage.grep(input())
             case 9:

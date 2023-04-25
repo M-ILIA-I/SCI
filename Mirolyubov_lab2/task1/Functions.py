@@ -1,6 +1,6 @@
 import copy
 import re
-from task1.CONST import PUNCT_MARKS, ABBR_WORD, PUNCT_FOR_WORDS
+from CONST import PUNCT_MARKS, ABBR_WORD, PUNCT_FOR_WORDS
 
 
 def get_default_check(text: str) -> bool:

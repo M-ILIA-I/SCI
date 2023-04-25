@@ -1,13 +1,10 @@
-# from CONST import *
-from task1.CONST import K, N
-from task1.Functions import (menu, get_num_sent, get_num_non_declarative_sent,
+from CONST import K, N
+from Functions import (menu, get_num_sent, get_num_non_declarative_sent,
                              get_average_sent_len, get_average_len_word, top_n_grams)
-
-# from Functions import *
 
 
 if __name__ == "__main__":
-    text = ""
+    # text = ""
     print("Press 1 for reading text and any char for input: ", end="")
     var = input()
 

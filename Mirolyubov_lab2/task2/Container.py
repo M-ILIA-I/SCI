@@ -29,7 +29,7 @@ class Container:
 
     def list(self):
         for i in self.storage:
-            print(i, end=" ")
+            print(i)
         print()
 
     def grep(self, regex: str) -> None:
@@ -54,7 +54,10 @@ class Container:
         db = {}
         with open(filename, "r") as f:
             db = json.load(f)
-        self.storage.update(db[username])
+        if username in db.keys():
+            self.storage.update(db[username])
+        else:
+            print("Your file hasn't this username")
 
     def switch(self, username, db):
         self.user.username = username
@@ -62,6 +65,6 @@ class Container:
             db[username] = set()
             self.storage = set()
         else:
-            self.storage = db[username]
+            self.storage = set()
 
 

@@ -2,6 +2,7 @@ import unittest
 from Functions import (get_num_sent,get_num_non_declarative_sent,get_num_abbr,
                       get_average_sent_len, get_average_len_word, get_default_check, top_n_grams)
 
+
 class SentenceStatisticCheck(unittest.TestCase):
     def test_dot(self):
         self.assertEqual(get_num_sent("I love you."), 1)
