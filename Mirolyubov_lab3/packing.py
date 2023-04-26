@@ -52,6 +52,8 @@ def pack_function(obj, cls=None):
 
     for (key, value) in inspect.getmembers(obj.__code__):
         if key.startswith("co_"):
+            if key == "co_lines":
+                continue
             if isinstance(value, bytes):
                 value = list(value)
 
@@ -93,7 +95,6 @@ def get_global_vars(func, cls):
 
             else:
                 globs[global_var] = func.__name__
-
     return globs
 
 
@@ -121,7 +122,7 @@ def pack_iterable(obj):
         return packed_dict
 
 
-def pack_inner_func(obj):
+def pack_inner_func(obj):   
     return pack_function(FunctionType(obj, {}))
 
 
