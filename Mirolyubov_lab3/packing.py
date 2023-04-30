@@ -43,7 +43,8 @@ def pack_function(obj, cls=None):
     if inspect.ismethod(obj):
         obj = obj.__func__
 
-    result["__name__"] = obj.__name__
+    obj.__name__ = obj.__name__.replace('>', '')
+    result["__name__"] = obj.__name__.replace('<', '')
 
     globs = get_global_vars(obj, cls)
     result["__globals__"] = pack_iterable(globs)
@@ -227,7 +228,6 @@ def unpack_function(src):
         if key in arguments["co_names"]:
             try:
                 globs[key] = __import__(src["__globals__"][key])
-
             except:
                 if globs[key] != src["__name__"]:
                     globs[key] = deconvert(src["__globals__"][key])
