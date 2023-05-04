@@ -1,0 +1,952 @@
+
+{
+"type": "dict"
+"value": {
+    {
+    "type": "str"
+    "value": "__type__"
+    }: 
+    {
+    "type": "str"
+    "value": "class"
+    }, 
+
+    {
+    "type": "str"
+    "value": "__name__"
+    }: 
+    {
+    "type": "str"
+    "value": "Counter"
+    }, 
+
+    {
+    "type": "str"
+    "value": "__doc__"
+    }: 
+    {
+    "type": "NoneType"
+    "value": null
+    }, 
+
+    {
+    "type": "str"
+    "value": "__init__"
+    }: 
+    {
+    "type": "dict"
+    "value": {
+        {
+        "type": "str"
+        "value": "__type__"
+        }: 
+        {
+        "type": "str"
+        "value": "function"
+        }, 
+
+        {
+        "type": "str"
+        "value": "__name__"
+        }: 
+        {
+        "type": "str"
+        "value": "__init__"
+        }, 
+
+        {
+        "type": "str"
+        "value": "__globals__"
+        }: 
+        {
+        "type": "dict"
+        "value": {
+            }
+        }, 
+
+        {
+        "type": "str"
+        "value": "__args__"
+        }: 
+        {
+        "type": "dict"
+        "value": {
+            {
+            "type": "str"
+            "value": "co_argcount"
+            }: 
+            {
+            "type": "int"
+            "value": 1
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_cellvars"
+            }: 
+            {
+            "type": "list"
+            "value": [
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_code"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "int"
+                "value": 100
+                },
+                {
+                "type": "int"
+                "value": 1
+                },
+                {
+                "type": "int"
+                "value": 124
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 95
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 100
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 83
+                },
+                {
+                "type": "int"
+                "value": 0
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_consts"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "NoneType"
+                "value": null
+                },
+                {
+                "type": "int"
+                "value": 0
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_filename"
+            }: 
+            {
+            "type": "str"
+            "value": "/home/ilya/SCI 3d sem/Mirolyubov_lab3/test_value.py"
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_firstlineno"
+            }: 
+            {
+            "type": "int"
+            "value": 49
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_flags"
+            }: 
+            {
+            "type": "int"
+            "value": 67
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_freevars"
+            }: 
+            {
+            "type": "list"
+            "value": [
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_kwonlyargcount"
+            }: 
+            {
+            "type": "int"
+            "value": 0
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_linetable"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "int"
+                "value": 10
+                },
+                {
+                "type": "int"
+                "value": 1
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_lnotab"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 1
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_name"
+            }: 
+            {
+            "type": "str"
+            "value": "__init__"
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_names"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "str"
+                "value": "value"
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_nlocals"
+            }: 
+            {
+            "type": "int"
+            "value": 1
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_posonlyargcount"
+            }: 
+            {
+            "type": "int"
+            "value": 0
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_stacksize"
+            }: 
+            {
+            "type": "int"
+            "value": 2
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_varnames"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "str"
+                "value": "self"
+                }
+            ]
+            }
+            }
+        }
+        }
+    }, 
+
+    {
+    "type": "str"
+    "value": "__module__"
+    }: 
+    {
+    "type": "str"
+    "value": "test_value"
+    }, 
+
+    {
+    "type": "str"
+    "value": "dec"
+    }: 
+    {
+    "type": "dict"
+    "value": {
+        {
+        "type": "str"
+        "value": "__type__"
+        }: 
+        {
+        "type": "str"
+        "value": "function"
+        }, 
+
+        {
+        "type": "str"
+        "value": "__name__"
+        }: 
+        {
+        "type": "str"
+        "value": "dec"
+        }, 
+
+        {
+        "type": "str"
+        "value": "__globals__"
+        }: 
+        {
+        "type": "dict"
+        "value": {
+            }
+        }, 
+
+        {
+        "type": "str"
+        "value": "__args__"
+        }: 
+        {
+        "type": "dict"
+        "value": {
+            {
+            "type": "str"
+            "value": "co_argcount"
+            }: 
+            {
+            "type": "int"
+            "value": 1
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_cellvars"
+            }: 
+            {
+            "type": "list"
+            "value": [
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_code"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "int"
+                "value": 124
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 4
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 106
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 100
+                },
+                {
+                "type": "int"
+                "value": 1
+                },
+                {
+                "type": "int"
+                "value": 56
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 2
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 95
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 100
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 83
+                },
+                {
+                "type": "int"
+                "value": 0
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_consts"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "NoneType"
+                "value": null
+                },
+                {
+                "type": "int"
+                "value": 1
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_filename"
+            }: 
+            {
+            "type": "str"
+            "value": "/home/ilya/SCI 3d sem/Mirolyubov_lab3/test_value.py"
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_firstlineno"
+            }: 
+            {
+            "type": "int"
+            "value": 55
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_flags"
+            }: 
+            {
+            "type": "int"
+            "value": 67
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_freevars"
+            }: 
+            {
+            "type": "list"
+            "value": [
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_kwonlyargcount"
+            }: 
+            {
+            "type": "int"
+            "value": 0
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_linetable"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "int"
+                "value": 18
+                },
+                {
+                "type": "int"
+                "value": 1
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_lnotab"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 1
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_name"
+            }: 
+            {
+            "type": "str"
+            "value": "dec"
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_names"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "str"
+                "value": "value"
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_nlocals"
+            }: 
+            {
+            "type": "int"
+            "value": 1
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_posonlyargcount"
+            }: 
+            {
+            "type": "int"
+            "value": 0
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_stacksize"
+            }: 
+            {
+            "type": "int"
+            "value": 3
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_varnames"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "str"
+                "value": "self"
+                }
+            ]
+            }
+            }
+        }
+        }
+    }, 
+
+    {
+    "type": "str"
+    "value": "inc"
+    }: 
+    {
+    "type": "dict"
+    "value": {
+        {
+        "type": "str"
+        "value": "__type__"
+        }: 
+        {
+        "type": "str"
+        "value": "function"
+        }, 
+
+        {
+        "type": "str"
+        "value": "__name__"
+        }: 
+        {
+        "type": "str"
+        "value": "inc"
+        }, 
+
+        {
+        "type": "str"
+        "value": "__globals__"
+        }: 
+        {
+        "type": "dict"
+        "value": {
+            }
+        }, 
+
+        {
+        "type": "str"
+        "value": "__args__"
+        }: 
+        {
+        "type": "dict"
+        "value": {
+            {
+            "type": "str"
+            "value": "co_argcount"
+            }: 
+            {
+            "type": "int"
+            "value": 1
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_cellvars"
+            }: 
+            {
+            "type": "list"
+            "value": [
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_code"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "int"
+                "value": 124
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 4
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 106
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 100
+                },
+                {
+                "type": "int"
+                "value": 1
+                },
+                {
+                "type": "int"
+                "value": 55
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 2
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 95
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 100
+                },
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 83
+                },
+                {
+                "type": "int"
+                "value": 0
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_consts"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "NoneType"
+                "value": null
+                },
+                {
+                "type": "int"
+                "value": 1
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_filename"
+            }: 
+            {
+            "type": "str"
+            "value": "/home/ilya/SCI 3d sem/Mirolyubov_lab3/test_value.py"
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_firstlineno"
+            }: 
+            {
+            "type": "int"
+            "value": 52
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_flags"
+            }: 
+            {
+            "type": "int"
+            "value": 67
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_freevars"
+            }: 
+            {
+            "type": "list"
+            "value": [
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_kwonlyargcount"
+            }: 
+            {
+            "type": "int"
+            "value": 0
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_linetable"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "int"
+                "value": 18
+                },
+                {
+                "type": "int"
+                "value": 1
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_lnotab"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "int"
+                "value": 0
+                },
+                {
+                "type": "int"
+                "value": 1
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_name"
+            }: 
+            {
+            "type": "str"
+            "value": "inc"
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_names"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "str"
+                "value": "value"
+                }
+            ]
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_nlocals"
+            }: 
+            {
+            "type": "int"
+            "value": 1
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_posonlyargcount"
+            }: 
+            {
+            "type": "int"
+            "value": 0
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_stacksize"
+            }: 
+            {
+            "type": "int"
+            "value": 3
+            }, 
+
+            {
+            "type": "str"
+            "value": "co_varnames"
+            }: 
+            {
+            "type": "list"
+            "value": [
+                {
+                "type": "str"
+                "value": "self"
+                }
+            ]
+            }
+            }
+        }
+        }
+    }, 
+
+    {
+    "type": "str"
+    "value": "__bases__"
+    }: 
+    {
+    "type": "list"
+    "value": [
+    ]
+    }
+    }
+}
