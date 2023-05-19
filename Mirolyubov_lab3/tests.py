@@ -1,5 +1,5 @@
 import unittest
-from factory import Factory
+from MirSerializer.factory import Factory
 import test_value
 
 

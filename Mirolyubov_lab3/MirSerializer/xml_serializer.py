@@ -1,5 +1,5 @@
-from packing import convert, deconvert
-from CONSTANTS import PRIMITIVE_TYPES
+from MirSerializer.packing import convert, deconvert
+from MirSerializer.CONSTANTS import PRIMITIVE_TYPES
 
 
 class Xml:

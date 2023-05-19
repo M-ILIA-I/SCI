@@ -1,8 +1,5 @@
 import argparse
-from factory import Factory
-from json_serializer import Json
-from xml_serializer import Xml
-import test_value
+from MirSerializer.factory import Factory
 
 if __name__ == '__main__':
     # a = Xml()

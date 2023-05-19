@@ -1,9 +1,9 @@
 import inspect
 import builtins
 import types
-from CONSTANTS import PRIMITIVE_TYPES
-from types import FunctionType, BuiltinFunctionType, LambdaType, CodeType, GetSetDescriptorType, MappingProxyType, \
-    MethodDescriptorType, WrapperDescriptorType
+from MirSerializer.CONSTANTS import PRIMITIVE_TYPES
+from types import FunctionType, BuiltinFunctionType, LambdaType, CodeType, GetSetDescriptorType, \
+    MethodDescriptorType
 
 
 def is_function(obj):
@@ -64,12 +64,10 @@ def pack_function(obj, cls=None):
                 for val in value:
                     if val is not None:
                         converted_vals.append(convert(val))
-
                     else:
                         converted_vals.append(None)
 
                 arguments[key] = converted_vals
-
                 continue
 
             arguments[key] = value
@@ -137,10 +135,9 @@ def pack_class(obj):
                 "__qualname__", "__text_signature__", "__itemsize__",
                 "__flags__", "__weakrefoffset__", "__objclass__"
         ) and type(attr[1]) not in (
-                WrapperDescriptorType,
                 MethodDescriptorType,
                 BuiltinFunctionType,
-                MappingProxyType,
+                types.MappingProxyType,
                 GetSetDescriptorType
         ):
             attr_value = getattr(obj, attr[0])

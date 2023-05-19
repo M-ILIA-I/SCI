@@ -1,5 +1,5 @@
-from json_serializer import Json
-from xml_serializer import Xml
+from MirSerializer.json_serializer import Json
+from MirSerializer.xml_serializer import Xml
 
 
 class Factory:
