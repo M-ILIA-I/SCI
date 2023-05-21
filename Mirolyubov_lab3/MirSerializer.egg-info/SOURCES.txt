@@ -1,0 +1,11 @@
+setup.py
+MirSerializer/CONSTANTS.py
+MirSerializer/__init__.py
+MirSerializer/factory.py
+MirSerializer/json_serializer.py
+MirSerializer/packing.py
+MirSerializer/xml_serializer.py
+MirSerializer.egg-info/PKG-INFO
+MirSerializer.egg-info/SOURCES.txt
+MirSerializer.egg-info/dependency_links.txt
+MirSerializer.egg-info/top_level.txt
